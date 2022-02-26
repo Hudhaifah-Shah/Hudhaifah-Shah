@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Utilities/all.css">
-    <script src="https://kit.fontawesome.com/28522d5296.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Utilities/all.css">
+        <script src="https://kit.fontawesome.com/28522d5296.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=EB+Garamond:ital,wght@1,500&family=Lobster&family=Vujahday+Script&display=swap" rel="stylesheet">
@@ -25,6 +28,16 @@
 </head>
 <body>
     <header>
+        <div class="menudiv">
+          <div class="menu"></div>
+          <img src="MegaFury (1) copy 2.png" alt="my logo" class="logo">
+          <a href="#"><h1 class="profile">Profile</h1></a>
+          <a href="#"><h1 class="work">Work</h1></a>
+          <a href="mailto:hudhaifahshah365@gmail.com?subject=Hudhaifah Shah contact form" accesskey="m" tabindex="9"><h1 class="contact1">Contact</h1></a>
+          <a href="#"><h1 class="seemeon">See me on...</h1></a>
+          <div class="menupattern"></div>
+          <a href="#"><h1 class="plans">Plans</h1></a>
+        </div>
         <img src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MTkwNjcyNg&ixlib=rb-1.2.1&q=85" alt="cool picture of a person working on a laptop." class="img-1">
       <div class="container-1">
         <h1 class=" m1" tabindex="1"> <strong>Meet Hudhaifah Shah</strong></h1>
@@ -83,7 +96,7 @@
      </a>
     </div>
 </nav>
- <footer>
+<footer>
 </footer>
 </body>
 </html>
@@ -95,14 +108,14 @@ body {
   z-index: 1;
 }
 .img-1 {
-  width: 99.3vw;
+  width: 1270px;
   opacity: 45%;
   position: absolute;
-  margin-top: -220px;
+  margin-top: -118px;
   z-index: 2;
   object-fit: cover;
   object-position: 100% 200px;
-  height: 930px;
+  height: 830px;
 }
 .m1 {
     display: flex;
@@ -226,7 +239,6 @@ body {
   margin-left: 450px;
   margin-top: 5px;
 }
-
 .facebook{
     max-width: 100px;
     height: auto;
@@ -283,7 +295,136 @@ body {
     position: absolute;
     background-color: black;
     height: 300px;
-    width: 99.9vw;
+    width: 99.99vw;
     margin-left: -8px;
+}
+.menu {
+    margin-top: -8px;
+    width: 99.3vw;
+  height: 90px;
+  background: #e1f5fe;
+  position: fixed;
+  z-index: 4;
+  display: flex;
+  flex-direction: row;
+}
+.profile {
+    color: black;
+    z-index: 5;
+    margin-left: 180px;
+    position: fixed;
+    margin-top: 20px;
+    font-family: 'Kavivanar', cursive;
+}
+.profile:hover {
+    text-shadow:
+    0 0 7px rgb(150, 252, 247),
+    0 0 10px rgb(141, 255, 249),
+    0 0 21px rgb(156, 248, 244),
+    0 0 42px rgb(151, 247, 242),
+    0 0 82px rgb(0, 255, 242),
+    0 0 92px rgb(0, 255, 242),
+    0 0 102px rgb(0, 255, 242),
+    0 0 151px rgb(0, 255, 242);
+}
+.logo {
+    z-index: 5;
+    position: fixed;
+   width: 80px;
+   height: auto;
+   margin-left: 50px;
+}
+.work {
+    color: black;
+    z-index: 5;
+    margin-left: 330px;
+    position: fixed;
+    margin-top: 20px;
+    font-family: 'Kavivanar', cursive;
+}
+.work:hover {
+    text-shadow:
+    0 0 7px rgb(150, 252, 247),
+    0 0 10px rgb(141, 255, 249),
+    0 0 21px rgb(156, 248, 244),
+    0 0 42px rgb(151, 247, 242),
+    0 0 82px rgb(0, 255, 242),
+    0 0 92px rgb(0, 255, 242),
+    0 0 102px rgb(0, 255, 242),
+    0 0 151px rgb(0, 255, 242);
+}
+.contact1 {
+    color: black;
+    z-index: 5;
+    margin-left: 460px;
+    position: fixed;
+    margin-top: 20px;
+    font-family: 'Kavivanar', cursive;
+}
+.contact1:hover {
+    text-shadow:
+    0 0 7px rgb(150, 252, 247),
+    0 0 10px rgb(141, 255, 249),
+    0 0 21px rgb(156, 248, 244),
+    0 0 42px rgb(151, 247, 242),
+    0 0 82px rgb(0, 255, 242),
+    0 0 92px rgb(0, 255, 242),
+    0 0 102px rgb(0, 255, 242),
+    0 0 151px rgb(0, 255, 242);
+}
+.seemeon {
+    color: black;
+    z-index: 5;
+    margin-left: 635px;
+    position: fixed;
+    margin-top: 20px;
+    font-family: 'Kavivanar', cursive;
+}
+.seemeon:hover {
+    text-shadow:
+    0 0 7px rgb(150, 252, 247),
+    0 0 10px rgb(141, 255, 249),
+    0 0 21px rgb(156, 248, 244),
+    0 0 42px rgb(151, 247, 242),
+    0 0 82px rgb(0, 255, 242),
+    0 0 92px rgb(0, 255, 242),
+    0 0 102px rgb(0, 255, 242),
+    0 0 151px rgb(0, 255, 242);
+}
+.plans {
+    color: black;
+    z-index: 5;
+    margin-left: 1170px;
+    position: fixed;
+    margin-top: 20px;
+    font-family: 'Kavivanar', cursive;
+}
+.plans:hover {
+    text-shadow:
+    0 0 7px rgb(150, 252, 247),
+    0 0 10px rgb(141, 255, 249),
+    0 0 21px rgb(156, 248, 244),
+    0 0 42px rgb(151, 247, 242),
+    0 0 82px rgb(0, 255, 242),
+    0 0 92px rgb(0, 255, 242),
+    0 0 102px rgb(0, 255, 242),
+    0 0 151px rgb(0, 255, 242);
+}
+.menupattern {
+    z-index: 5;
+    position: fixed;
+    margin-left: 830px;
+    margin-top: -9px;
+    width: 300px;
+    height: 90px;
+    background-color: #e1f5fe;
+    opacity: 0.8;
+    background-image:  radial-gradient(#00aeff 0.75px, transparent 0.75px), radial-gradient(#00aeff 0.75px, #e1f5fe 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0,15px 15px;
+}
+.menudiv {
+    display: flex;
+    flex-direction: row;
 }
 </style>
