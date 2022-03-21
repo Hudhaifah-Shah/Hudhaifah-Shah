@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kavivanar&family=Pacifico&family=Patrick+Hand&family=Righteous&family=Sansita+Swashed:wght@300&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kavivanar&family=Pacifico&family=Patrick+Hand&family=Righteous&family=Sansita+Swashed:wght@300&family=Supermercado+One&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Indie+Flower&family=Kavivanar&family=Pacifico&family=Patrick+Hand&family=Righteous&family=Sansita+Swashed:wght@300&family=Supermercado+One&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body>
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Laptop running code" class="background-image">  
+<h1 id="title">Developer computer survey</h1>
+    <p id="description">Thankyou for your taking your time and helping us to advise other developers</p>
+<div class="form-box">
+    <form id="survey-form">
+        <div class="form-group">
+            <form action="#" >
+                <label for="name" class="desc">Name</label><br>
+                <input type="text" id="name" placeholder="Name" name="name" class="textbox" required>
+            </form>
+        </div>
+        <div class="form-group">
+            <label for="email" class="desc">
+                Email
+            </label><br>
+            <input type="text" id="email" placeholder="Email" name="email" class="textbox" required>
+        </div>
+        <div class="form-group">
+            <label for="age" class="desc">
+                Age(optional)
+            </label><br>
+            <input type="text" id="age" placeholder="Age" name="age" class="textbox" min="9" max="85" required>
+        </div>
+        <p class="desc">Which option best describes your need for a computer</p>
+        <select id="dropdown" name="need" required class="textbox" required>
+            <option disabled selected value class="selectyourneed">Select your need</option>
+            <option value="student">Student</option>
+            <option value="office">office</option>
+            <option value="everyday">Everyday</option>
+            <option value="gaming">Gaming</option>
+            <option value="creative">Creative Pros</option>
+        </select>
+        
+    </form>
+    
+</div>
+</body>
+</html>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+   .background-image {
+       opacity: 50%;
+       position: fixed;
+       margin-left: -8px;
+       margin-top: -16px;
+       width: 100vw;
+       height: 56.7vw;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position:center;
+   }
+   .form-box {
+       border-radius: 20px;
+       position: absolute;
+       background-color: black;
+       margin-top: 250px;
+       margin-left: 290px;
+       width: 55vw;
+       height: 1000px;
+       opacity: 70%;
+       color: white;
+   }
+   #title {
+       position: absolute;
+       margin-left: 435px;
+       margin-top: 110px;
+       font-family: 'Righteous', cursive;
+   }
+   #description {
+       position: absolute;
+       margin-left: 385px;
+       margin-top: 180px; 
+       font-family: 'Supermercado One', cursive;
+   }
+   .textbox {
+       height: 50px;
+       width: 500px;
+       border-radius: 20px;
+       margin-left: 120px;
+       margin-top: 60px;
+   }
+   #dropdown {
+       margin-top: 80px;
+   }
+   .desc {
+       position: absolute;
+       margin-left: 35px;
+       margin-top: 20px;
+       font-family: 'Chewy', cursive;
+       font-size: 30px;
+       color: white;
+   }
+</style>
