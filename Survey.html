@@ -16,39 +16,133 @@
 <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Indie+Flower&family=Kavivanar&family=Pacifico&family=Patrick+Hand&family=Righteous&family=Sansita+Swashed:wght@300&family=Supermercado+One&family=Yellowtail&display=swap" rel="stylesheet">
 </head>
 <body>
-<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Laptop running code" class="background-image">  
-<h1 id="title">Developer computer survey</h1>
-    <p id="description">Thankyou for your taking your time and helping us to advise other developers</p>
+<img src="https://c4.wallpaperflare.com/wallpaper/339/695/649/ball-smile-happy-toy-wallpaper-preview.jpg" alt="Happy background pic" class="background-image">  
+<h1 id="title">The Happiness Survey</h1>
+    <p id="description">Let us know how you're feeling in this
+        short Happiness Pulse Check Survey :)</p>
 <div class="form-box">
-    <form id="survey-form">
+    <form id="survey-form" action="#">
         <div class="form-group">
-            <form action="#" >
-                <label for="name" class="desc">Name</label><br>
-                <input type="text" id="name" placeholder="Name" name="name" class="textbox" required>
-            </form>
+                <label for="name" class="desc">To start off, what's your name?😃</label><br>
+                <input type="text" id="name" placeholder="Name" name="name" class="textbox" required>          
         </div>
         <div class="form-group">
             <label for="email" class="desc">
-                Email
+                We would love it if you could share your email
             </label><br>
-            <input type="text" id="email" placeholder="Email" name="email" class="textbox" required>
+            <input type="email" id="email" placeholder="Email" name="email" class="textbox" required>
         </div>
         <div class="form-group">
             <label for="age" class="desc">
-                Age(optional)
+                Tell us, How happy do you feel right now?(1-10)
             </label><br>
-            <input type="text" id="age" placeholder="Age" name="age" class="textbox" min="9" max="85" required>
+            <input type="number" id="age" placeholder="Age" name="age" class="textbox" min="1" max="10" required>
         </div>
-        <p class="desc">Which option best describes your need for a computer</p>
+        <p class="desc">In general, what type of a person do you consider yourself to be?</p>
         <select id="dropdown" name="need" required class="textbox" required>
-            <option disabled selected value class="selectyourneed">Select your need</option>
-            <option value="student">Student</option>
-            <option value="office">office</option>
-            <option value="everyday">Everyday</option>
-            <option value="gaming">Gaming</option>
-            <option value="creative">Creative Pros</option>
+            <option disabled selected value class="selectyourneed">Select your role</option>
+            <option value="man" class="option1">The man of the house</option>
+            <option value="old timer" class="option1">Old timer</option>
+            <option value="teenager" class="option1">The typical teenager</option>
+            <option value="computer kid" class="option1">The computer kid</option>
+            <option value="athletic" class="option1">The athletic guy</option>
+            <option value="friendly" class="option1">The friendly one</option>
+            <option value="troublemaker" class="option1">The troublemaker</option>
         </select>
-        
+        <div class="form-group" id="levelsgroup">
+            <p class="desc">How happy is your life?</p>
+          <div class="levelsdiv">
+            <label for="one" class="labels">
+                <input id="one" type="radio" name="happiness-levels" value="one" class="radio">
+                <span class="number">1</span>
+            </label>
+            <label for="two" class="labels">
+                <input id="two" type="radio" name="happiness-levels" value="two" class="radio">
+                <span class="number">2</span>
+            </label>
+            <label for="three" class="labels">
+                <input id="three" type="radio" name="happiness-levels" value="three" class="radio">
+                <span class="number">3</span>
+            </label>
+            <label for="four" class="labels">
+                <input id="four" type="radio" name="happiness-levels" value="four" class="radio">
+                <span class="number">4</span>
+            </label>
+            <label for="five" class="labels">
+                <input id="five" type="radio" name="happiness-levels" value="five" class="radio">
+                <span class="number">5</span>
+            </label>
+            <label for="six" class="labels">
+                <input id="six" type="radio" name="happiness-levels" value="six" class="radio">
+                <span class="number">6</span>
+            </label>
+            <label for="seven" class="labels">
+                <input id="seven" type="radio" name="happiness-levels" value="seven" class="radio">
+                <span class="number">7</span>
+            </label>
+            <label for="eight" class="labels">
+                <input id="eight" type="radio" name="happiness-levels" value="eight" class="radio">
+                <span class="number">8</span>
+            </label>
+            <label for="nine" class="labels">
+                <input id="nine" type="radio" name="happiness-levels" value="nine" class="radio">
+                <span class="number">9</span>
+            </label>
+            <label for="ten" class="labels">
+                <input id="ten" type="radio" name="happiness-levels" value="ten" class="radio">
+                <span class="number">10</span>
+            </label>
+          </div>
+          <p class="purgatory">Everyday day is purgatory</p>
+          <p class="fine">I get by fine</p>
+          <p class="pollyana">Call me pollyana</p>
+        </div>
+        <div class="form-group">
+            <p class="joy">Which of the following do you find joy in?<br>(Select all that apply)</p>
+            <div class="activities">
+                <label for="work">
+                    <input type="checkbox" id="work" name="joyful-activities" value="work/school" class="checkboxes">
+                    <span class="words">Work</span>
+                </label>
+                <label for="hobbies">
+                    <input type="checkbox" id="hobbies" name="joyful-activities" value="hobbies" class="checkboxes">
+                    <span class="words">Hobbies</span>
+                </label>
+                <label for="friends">
+                    <input type="checkbox" id="friends" name="joyful-activities" value="friends" class="checkboxes">
+                    <span class="words">Time with friends</span>
+                </label>
+                <label for="family">
+                    <input type="checkbox" id="family" name="joyful-activities" value="family" class="checkboxes">
+                    <span class="words">Time with family</span>
+                </label>
+                <label for="relax">
+                    <input type="checkbox" id="relax" name="joyful-activities" value="relax" class="checkboxes">
+                    <span class="words">Relaxing</span>
+                </label>
+                <label for="exercise">
+                    <input type="checkbox" id="exercise" name="joyful-activities" value="exercise" class="checkboxes">
+                    <span class="words">Exercising</span>
+                </label>
+                <label for="lonely">
+                    <input type="checkbox" id="lonely" name="joyful-activities" value="lonely" class="checkboxes">
+                    <span class="words">Being alone</span>
+                </label>
+                <label for="other">
+                    <input type="checkbox" id="other" name="joyful-activities" value="other" class="checkboxes">
+                    <span class="words">Other</span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <p class="you">Tell us a bit more about yourself, your problems and how you try to be happy😉</p>
+            <textarea id="yourself" class="textarea" name="yourself" placeholder="Come on and tell us..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
     </form>
     
 </div>
@@ -60,7 +154,7 @@
         color: white;
     }
    .background-image {
-       opacity: 50%;
+       opacity: 100%;
        position: fixed;
        margin-left: -8px;
        margin-top: -16px;
@@ -75,9 +169,9 @@
        position: absolute;
        background-color: black;
        margin-top: 250px;
-       margin-left: 290px;
-       width: 55vw;
-       height: 1000px;
+       margin-left: 200px;
+       width: 70vw;
+       height: 1500px;
        opacity: 70%;
        color: white;
    }
@@ -89,7 +183,7 @@
    }
    #description {
        position: absolute;
-       margin-left: 385px;
+       margin-left: 370px;
        margin-top: 180px; 
        font-family: 'Supermercado One', cursive;
    }
@@ -97,7 +191,7 @@
        height: 50px;
        width: 500px;
        border-radius: 20px;
-       margin-left: 120px;
+       margin-left: 170px;
        margin-top: 60px;
    }
    #dropdown {
@@ -109,6 +203,96 @@
        margin-top: 20px;
        font-family: 'Chewy', cursive;
        font-size: 30px;
-       color: white;
+       color: white ;
    }
+   .radio {
+      display: none;
+  }
+  .levelsdiv {
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 20px;
+      font-size: 35px;
+  }
+  .labels {
+      margin-left: 10px;
+      text-align: center;
+      box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.35);
+      padding: 20px;
+      padding-left: 25px;
+      cursor: pointer;
+      border: 1px solid #fff;
+      border-color: white;
+      border-radius: 10px;
+      transition: all 0.3s ease-in;
+  }
+  input[type=radio]:checked + .number {
+      color: rgb(255, 192, 110);
+      font-size: 30px;
+  }
+  .purgatory {
+      font-size: 17px;
+      position: absolute;
+      margin-top: 170px;
+      margin-left: 15px;
+      font-weight: 700;
+  }
+  .fine {
+    font-size: 17px;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 380px;
+    font-weight: 700;
+  }
+  .pollyana {
+    font-size: 17px;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 750px;
+    font-weight: 700;
+  }
+  .joy {
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 230px;
+    font-family: 'Chewy', cursive;
+    font-size: 30px;
+    color: white ;
+  }
+  .activities {
+      margin-top: 330px;
+      position: absolute;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      line-height: 30px;
+      font-weight: 700;
+  }
+  .you {
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 590px;
+    font-family: 'Chewy', cursive;
+    font-size: 30px;
+    color: white ;
+  }
+  .textarea {
+      margin-top: 700px;
+      margin-left: 100px;
+      min-height: 150px;
+      width: 78%;
+      resize: vertical;
+  }
+  .submit-button {
+  display: block;
+  width: 70%;
+  height: 50px;
+  background-color: red; 
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: 140px;
+  margin-top: 30px;
+}
 </style>
