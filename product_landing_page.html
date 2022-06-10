@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Niconne&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <div class="menu">
+          
+            <nav id="nav-bar">
+                <a href="#desc"><h2 class="nav-link" id="one">Why Häagen Dazs</h2></a>
+                <a href="#vid"><h2 class="nav-link" id="two">See our story</h2></a>
+                <img src="http://assets.stickpng.com/images/5ae22cac33b73fa43b1a8927.png" alt="Logo" class="header-img">
+                <a href="#flav"><h2 class="nav-link" id="three">Check out our best flavours</h2></a>
+            </nav>
+        </div>
+    </header>
+    <article>
+    <h1 class="title">Häagen Dazs</h1>
+    <p class="title_desc">The future of the ice cream industry</p>
+    <div class="desc" id="desc">
+        <div class="icon">
+            <img src="https://img.icons8.com/bubbles/200/undefined/ok-hand.png" class="ok_hand">
+        </div>
+        <div class="text_desc">
+        <h2 class="best_ingr">We use the best ingredients</h2>
+        <p class="ingr_desc">Our ingredients support positive change and makes our ice cream taste sensational!</p>
+        </div>
+    </div>
+    <div class="desc">
+        <div class="icon">
+            <img src="https://www.freeiconspng.com/uploads/community-icon-33.png" alt="" class="equality">
+        </div>
+        <div class="text_desc" style="margin-top: 20px;">
+        <h2 class="differ">Making a difference</h2>
+        <p class="differ_desc">We want everybody to have the luxury of good ice cream</p>
+        </div>
+    </div>
+    <div class="videodiv" id="vid">
+        <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/0mdenaQRCzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="vid_desc" style="margin-top: 100px; margin-left: 50px;">Say hello to the extraordinary.</p>
+    </div>
+    <div class="flavour_div" id="flav">
+        <h2 class="flavours">Check out our yummy flavours</h2>
+        <div class="flavour_img">
+        <img src="https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/haagen-dazs/products/bars/Haagen-dazs-caramel-cone-ice-cream-bars-1500x1140.png" alt="" class="caramel">
+        <img src="https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/haagen-dazs/products/bars/Haagen-dazs-chocolate-dark-chocolate-ice-cream-bars-1500x1140.png" alt="" class="dark">
+        <img src="https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/haagen-dazs/products/bars/haagen-dazs-Soft-Dipped-Chocolate-ice-cream-bar-1500x1140.png" alt="" class="choco" style="width: 500px;">
+        </div>
+    </div>
+    <div class="formdiv">
+        <h1 class="formheading">Join our newsletter, The Scoop!</h1>
+        <form action="https://www.freecodecamp.com/email-submit" class="form">
+            <input type="email" placeholder="Email" class="inputemail">
+            <button type="submit" class="submitemail">Submit</button>
+        </form>
+    </div>
+</article>
+</body>
+</html>
+<style>
+    body {
+        background-color: #b9c5ff;
+        background-image: repeating-linear-gradient(90deg, #b9c5ff 0%, #ffffff 17%, #ffb4f8 39%, #ffdfa4 60%, #ffffff 80%, #ffad86 100%);
+    }
+    .menu {
+        height: 200px;
+        width: 100vw;
+        color: transparent;
+        position: fixed;
+        display: flex;
+        z-index: 4;
+    }
+    .header-img {
+        height: 100px;
+        margin-left: 500px;
+    }
+    #one {
+        position: absolute;
+        margin-left: 50px;
+        margin-top: 35px;
+        color: black;
+    }
+    #two {
+        position: absolute;
+        margin-left: 300px;
+        margin-top: 35px;
+        color: black;
+    }
+    #three {
+        position: absolute;
+        margin-left: 800px;
+        margin-top: -70px;
+        color: black;
+    }
+    article {
+        position: absolute;
+        margin-top: 100px;
+    }
+    .title {
+        margin-top: 100px;
+        font-size: 50px;
+        margin-left: 450px;
+    }
+    .title_desc {
+        margin-left: 410px;
+        font-size: 25px;
+        font-family: 'Itim', cursive;
+        margin-top: -20px;
+    }
+    .ok_hand {
+        margin-top: 100px;
+    }
+    .desc {
+        display: flex;
+    }
+    .text_desc {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        margin-left: 100px;
+    }
+    .videodiv {
+        margin-left: 100px;
+        display: flex;
+        margin-top: 100px;
+        font-size: 30px;
+        font-family: 'Itim', cursive;
+    }
+    .flavour_div {
+        margin-top: 100px;
+        margin-left: 500px;
+    }
+    .flavour_img {
+        margin-top: 70px;
+        margin-left: -350px;
+        display: flex;
+    }
+    .formdiv {
+        margin-left: 470px;
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+    .inputemail {
+        width:250px;
+        height: 30px;
+        border-radius: 20px;
+    }
+    @media (max-width: 1097px) {
+        .flavour_img {
+        margin-top: 70px;
+        margin-left: -33vw;
+        display: flex;
+    } 
+    }
+</style>
