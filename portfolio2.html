@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Itim&family=Joan&family=Niconne&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar" id="navbar">
+            <a href="#" class="about" id="nav-link" style="margin-left: 900px;"><h2>About</h2></a>
+            <a href="#projects" class="work" id="nav-link"><h2>Work</h2></a>
+            <a href="#" class="contact" id="nav-link"><h2>Contact</h2></a>
+    </nav>
+    <section id="welcome-section">
+        
+        <h1 class="meet">Meet Hudhaifah Shah</h1>
+        <h3 class="desc">A web developer ready to provide service and help you achieve your dream website</h3>
+        <form action="#projects">
+            <button type="submit" class="learn" formaction="file:///Users/sajjadtahir/Desktop/Hudhaifah%20Shah%20programmer/portfolio2.html#projects">
+                Learn more
+            </button>
+        </form>
+    </section>
+    <section id="projects">
+        <h1 class="check">Check out my work</h1>
+        <section class="proj-pics">
+        <a href="https://codepen.io/hudhaifah-shah/pen/BambxeV" class="project-tile">
+            <img src="https://drive.google.com/uc?export=view&id=1giZ4VDR-iDZyNRilm2JQpIec3RZI_0k8" alt="tribute page image" class="trib-img" id="proj-img">
+            <p class="trib-desc">Tribute Page</p>
+        </a>
+        <a href="https://codepen.io/hudhaifah-shah/pen/WNdeVMN" class="project-tile">
+            <img src="https://drive.google.com/uc?export=view&id=17cYoqPKeFgEattQiS9ZN6AAZyyDTBZL5" alt="survey page image" class="surv-img" id="proj-img">
+            <p class="surv-desc">Survey</p>
+        </a>
+        </section>
+    </section>
+    <conatainer class="contacts">
+        <h6 class="how-coffee">How do you take your coffee?</h6>
+        <img src="https://img.icons8.com/fluency/48/undefined/facebook-new.png"/>
+        <img src="https://img.icons8.com/fluency/48/undefined/instagram-new.png"/>
+        <img src="https://img.icons8.com/fluency/48/undefined/github.png"/>
+    </conatainer>
+</body>
+</html>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        width: 100vw;
+    }
+    #nav-link {
+        margin-left: 50px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Joan', serif;
+    }
+    #welcome-section {
+        background-image: url(https://images.unsplash.com/photo-1577909659949-2302826adf26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+        width: 100%;
+        height: 650px;
+        object-fit: contain;
+        background-size: cover;
+        background-position: center;
+        color: black;
+    }
+    .meet {
+        position: absolute;
+        font-size: 60px;
+        font-family: 'Niconne', cursive;
+        margin-left: 350px;
+        margin-top: 200px;
+    }
+    .desc {
+        position: absolute;
+        margin-left: 270px;
+        margin-top: 290px;
+    }
+    .learn {
+        margin-left: 550px;
+        margin-top: 520px;
+        height: 30px;    
+        width: 120px; 
+        font-size: 15px; 
+    }
+    .check {
+        margin-top: 80px;
+        margin-left: 450px;
+        font-size: 40px;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .trib-img {
+        width: 370px;
+        height: 270px;
+    } 
+    .surv-img {
+        width: 370px;
+        height: 270px;
+    }
+    .proj-pics {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+</style>
