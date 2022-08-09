@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h1>Generate a<br> <span id="rp">random Password</span></h1>
+        <p id="p1">Never use an insecure password again.</p>
+        <button id="gp-btn" onclick="chanText()">Generate Passwords</button>
+        <hr id="hr1">
+        <div id="btns">
+        <button class="btn" id="btn-1" onclick=""></button>
+        <button class="btn" id="btn-2" onclick=""></button>
+        </div>
+    </body>
+</body>
+</html>
+<style>
+    body {
+    margin: 0;
+    background-color: #1F2937;
+    color: white;
+    padding-left: 20px;
+}
+#rp {
+    color: #4ADF86
+}
+h1 {
+    font-size: 7vw;
+    margin-top: 10vw
+}
+#p1 {
+    font-size: 5vw;
+    color: #A5A5A5
+}
+#gp-btn {
+    height: 10vw;
+    width: 60vw;
+    border-radius: 5px;
+    background-color: #4ADF86;
+    outline: none; 
+    border-width: 0px;
+    font-size: 5.8vw
+}
+#hr1 {
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px
+}
+#btn-1 {
+    width: 45vw;
+    height: 11vw;
+    left: 287px;
+    top: 396px;
+    background: #273549;
+    border-radius: 6px;
+    border-width: 0px;
+}
+#btn-2 {
+    width: 45vw;
+    height: 11vw;
+    left: 287px;
+    top: 396px;
+    background: #273549;
+    border-radius: 6px;
+    border-width: 0px;
+}
+#btns {
+    width: 100vw;
+    height: 20vw;
+}
+.btn {
+    font-size: 4vw;
+    color: white;
+    margin-top: 20px;
+}
+</style>
+<script>
+    const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
+"/"];
+let btn1 = document.getElementById("btn-1")
+let btn2 = document.getElementById("btn-2")
+
+let passLength = 15
+let genP = genPass()
+function genChar() {
+    let random = Math.floor(Math.random() * characters.length)
+    return characters[random] 
+}
+function genPass() {
+    let randomPass = ""
+    for (let i = 0; i < passLength; i++) {
+        randomPass += genChar() 
+    }
+    return randomPass
+}
+function chanText() {
+    btn1.textContent = genPass()
+    btn2.textContent = genPass()
+}
+
+</script>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&family=Delius&family=Itim&family=Joan&family=Niconne&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header-div">
+    <div>UNIT CONVERTER</div> 
+    <input type="number" id="input-el" placeholder="0">
+    <button id="input-btn">CONVERT</button>
+  </div>
+  <div id="ans-div">
+    <div class="div" id="div1">
+      <h1>Length (meter/feet)</h1>
+      <div id="inline">
+        <p>1m = 3.280ft <span style="color: black;">|</span> 1ft = 0.304m</p>
+        
+      </div>
+    </div>
+    <div class="div" id="div2">
+      <h1>Volume (litres/gallons)</h1>
+      <p>1l = 0.264gal <span style="color: black;">|</span> 1gal = 3.785l</p>
+    </div>
+    <div class="div" id="div3">
+      <h1>Mass (kilograms/pounds)</h1>
+      <p>1kg = 2.204lb <span style="color: black;">|</span> 1lb = 0.453kg</p>
+    </div>
+    <!--<div id="ans-div">
+      <div class="div" id="div1">
+        <h1>Length (meter/feet)</h1>
+        <div id="inline">
+          <p>1m = 3.280ft</p>
+          <hr>
+          <p>1ft = 0.304m</p>
+        </div>
+      </div>
+      <div class="div" id="div2">
+        <h1>Volume (litres/gallons)</h1>
+        <p>1l = 0.264gal</p>
+        <hr>
+        <p>1gal = 3.785l</p>
+      </div>
+      <div class="div" id="div3">
+        <h1>Mass (kilograms/pounds)</h1>
+        <p>1kg = 2.204lb</p>
+        <hr>
+        <p>1lb = 0.453kg</p>
+      </div>
+  </div>-->
+</body>
+</html>
+<style>
+  body {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  }
+  .header-div {
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 24%, #ffa23b 67%, #ff2525 100%);
+    color: white;
+    width: 100vw;
+    height: 40vh;
+    margin-left: -8px;  
+    margin-top: -21px;
+    text-align: center;
+  }
+  .header-div div {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+  }
+  #input-el {
+    margin: 0 auto;
+    margin-top: 20vh;
+    width: 150px;
+    height: 25px;
+    border-radius: 20px;
+    padding: 10px;
+    border-width: 0px;
+  }
+  #input-btn {
+    width: 150px;
+    height: 47px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 17px;
+    border-width: 0px;
+    background-color: #E0BFB8;
+    font-weight: 550;
+  }
+  /*@media (max-width: 571px) {
+    .header-div h1 {
+      margin-left: 20vw;
+      font-size: 7vw;
+    }
+    #input-el {
+      margin-left: 20vw;
+    }
+  }
+  /*@media (max-width: 414px) {
+    #input-btn {
+      position: absolute;
+      margin-top: 180px;
+      margin-left: -170px;
+      width: 170px;
+    }
+    #input-el {
+      margin-top: 130px;
+    }
+  }*/
+  #ans-div {
+    display: flex;
+      flex-direction: column;
+  }
+  .div {
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 24%, #ffa23b 67%, #ff2525 100%);
+    width: 95vw;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 20px;
+    color: honeydew;
+  }
+  p {
+    margin-left: 20px;
+    margin-top: -10px;
+    font-size: 25px;
+  }
+  .div h1 {
+    font-size: 35px;
+    margin-top: -12px;
+  }
+  @media (max-width: 424px) {
+    .div {
+      height: 130px;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 7vw;
+    }
+  }
+</style>
+<script>
+  
+</script>
